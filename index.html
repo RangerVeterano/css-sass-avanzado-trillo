@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/png" href="img/favicon.png">
+
+    <title>trillo &mdash; Your all-in-one booking app</title>
+</head>
+
+<body>
+    <div class="contenedor">
+        <header class="header">
+            <img src="img/logo.png" alt="trillo logo" class="logo">
+            <form action="#" class="buscar">
+                <input type="text" class="buscar__input" placeholder="Buscar Hoteles">
+                <button class="buscar__boton">
+                    <svg class="buscar__icono">
+                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+            <nav class="navegacion-usuario">
+                <div class="navegacion-usuario__caja-iconos">
+                    <svg class="navegacion-usuario__icono">
+                        <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="navegacion-usuario__notificacion">
+                        7
+                    </span>
+                </div>
+                <div class="navegacion-usuario__caja-iconos">
+                    <svg class="navegacion-usuario__icono">
+                        <use xlink:href="img/sprite.svg#icon-chat"></use>
+                    </svg>
+                    <span class="navegacion-usuario__notificacion">13</span>
+                </div>
+                <div class="navegacion-usuario__usuario">
+                    <img src="img/user.jpg" alt="" class="navegacion-usuario__foto-usuario">
+                    <span class="navegacion-usuario__nombre-usuario">Jonas</span>
+                </div>
+            </nav>
+        </header>
+        <div class="contenido">
+            <nav class="sidebar">
+                <ul class="side-nav">
+                    <li class="side-nav__item side-nav__item--active">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icono">
+                                <use xlink:href="img/sprite.svg#icon-home"></use>
+                            </svg>
+                            <span>Hotel</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icono">
+                                <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                            </svg>
+                            <span>Vuelos</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icono">
+                                <use xlink:href="img/sprite.svg#icon-key"></use>
+                            </svg>
+                            <span>Alquiler Vehículos</span>
+                        </a>
+                    </li>
+                    <li class="side-nav__item">
+                        <a href="#" class="side-nav__link">
+                            <svg class="side-nav__icono">
+                                <use xlink:href="img/sprite.svg#icon-map"></use>
+                            </svg>
+                            <span>Tours</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <div class="legal">
+                    &copy; 2021 by trillo, todos los derechos reservados.
+                </div>
+            </nav>
+            <main class="hotel-view">
+                <div class="galeria">
+                    <figure class="galeria__item">
+                        <img src="img/hotel-1.jpg" alt="Imagen de hotel 1" class="galeria__foto">
+                    </figure>
+
+                    <figure class="galeria__item">
+                        <img src="img/hotel-2.jpg" alt="Imagen de hotel 2" class="galeria__foto">
+                    </figure>
+
+                    <figure class="galeria__item">
+                        <img src="img/hotel-3.jpg" alt="Imagen de hotel 3" class="galeria__foto">
+                    </figure>
+                </div>
+                <div class="overview">
+                    <h1 class="overview__cabezera">
+                        Hotel Las Palmas
+                    </h1>
+                    <div class="overview__estrellas">
+                        <svg class="overview__icono-estrella">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icono-estrella">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icono-estrella">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icono-estrella">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="overview__icono-estrella">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                    </div>
+                    <div class="overview__localizacion">
+                        <svg class="overview__icono-localizacion">
+                            <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                        </svg>
+                        <button class="btn-inline">Albufeira, Portugal</button>
+                    </div>
+                    <div class="overview__valoracion">
+                        <div class="overview__valoracion-media">
+                            8.6
+                        </div>
+                        <div class="overview__valoracion-cuenta">
+                            429 votos
+                        </div>
+                    </div>
+                </div>
+                <div class="detalles">
+                    <div class="descripcion">
+                        <p class="parrafo">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi nisi dignissimos debitis
+                            ratione sapiente saepe. Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                            architecto voluptate.
+                        </p>
+                        <p class="parrafo">
+                            Accusantium cumque, quas, ut corporis incidunt deserunt quae architecto voluptate delectus,
+                            inventore iure aliquid aliquam.
+                        </p>
+                        <ul class="lista">
+                            <li class="lista__item">Cerca de la playa</li>
+                            <li class="lista__item">Desayuno incluido</li>
+                            <li class="lista__item">Transporte gratuito al avion</li>
+                            <li class="lista__item">Wifi gratuito</li>
+                            <li class="lista__item">Calefacción</li>
+                            <li class="lista__item">Mascotas permitidas</li>
+                            <li class="lista__item">Hablamos todos los idiomas</li>
+                            <li class="lista__item">Perfecto para las familias</li>
+                        </ul>
+                        <div class="recomendaciones">
+                            <p class="recomendaciones__parrafo">
+                                Lucy y otros 3 amigos recomiendan este hotel
+                            </p>
+                            <div class="recomendaciones__amigos">
+                                <img src="img/user-3.jpg" alt="Amigo 3" class="recomendaciones__fotos">
+                                <img src="img/user-4.jpg" alt="Amigo 4" class="recomendaciones__fotos">
+                                <img src="img/user-5.jpg" alt="Amigo 5" class="recomendaciones__fotos">
+                                <img src="img/user-6.jpg" alt="Amigo 6" class="recomendaciones__fotos">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="revision-usuario">
+                        <figure class="revisiones">
+                            <blockquote class="revisiones__texto">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto
+                                dicta animi, totam, itaque officia ex.
+                            </blockquote>
+                            <figcaption class="revisiones__usuarios">
+                                <img src="img/user-1.jpg" alt="Usuario 1" class="revisiones__foto">
+                                <div class="revisiones__usuarios-caja">
+                                    <p class="revisiones__usuarios-nombre">
+                                        Ignacio Bohigues
+                                    </p>
+                                    <p class="revisiones__usuarios-fecha">
+                                        Feb 23rd, 2017
+                                    </p>
+                                </div>
+                                <div class="revisiones__puntuacion">
+                                    7.8
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <figure class="revisiones">
+                            <blockquote class="revisiones__texto">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga doloremque architecto
+                                dicta animi.
+                            </blockquote>
+                            <figcaption class="revisiones__usuarios">
+                                <img src="img/user-2.jpg" alt="Usuario 2" class="revisiones__foto">
+                                <div class="revisiones__usuarios-caja">
+                                    <p class="revisiones__usuarios-nombre">
+                                        Jorge Martinez
+                                    </p>
+                                    <p class="revisiones__usuarios-fecha">
+                                        Set 17th, 2017
+                                    </p>
+                                </div>
+                                <div class="revisiones__puntuacion">
+                                    9.8
+                                </div>
+                            </figcaption>
+                        </figure>
+                        <button class="btn-inline">
+                            Mostrar todos <span>&rarr;</span>
+                        </button>
+                    </div>
+
+                </div>
+                <div class="cta">
+                    <h2 class="cta__book-now">
+                        ¡Buenas noticias! tenemos 4 habitaciones libres para tus datos seleccionados
+                    </h2>
+                    <button class="btn">
+                        <span class="btn__visible">Apuntate ahora</span>
+                        <span class="btn__invisible">Solo 4 habitaciones disponibles</span>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+
+</html>

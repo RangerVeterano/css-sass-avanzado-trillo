@@ -1,0 +1,84 @@
+//Esta es la raiz incluso más alta que el html, aqui vamos a poner nuestras variables de css
+:root {
+  --color-primario: #eb2f64;
+  --color-primario-claro: #ff3366;
+  --color-primario-oscuro: #ba265d;
+
+  --color-gris-claro-1: #faf9f9;
+  --color-gris-claro-2: #f4f2f2;
+  --color-gris-claro-3: #f0eeee;
+  --color-gris-claro-4: #ccc;
+
+  --color-gris-oscuro-1: #333;
+  --color-gris-oscuro-2: #777;
+  --color-gris-oscuro-3: #999;
+
+  --sombra-oscura: 0 2rem 6rem rgba(0, 0, 0, 0.4);
+  --sombra-clara : 0 2rem 5rem rgba(0, 0, 0, 0.06);
+
+  --linea: 1px solid var(--color-gris-claro-2);
+
+}
+
+// variables medias querys
+$pantallaEnorme: 75rem; //1200px
+$pantallaGrande: 68.75rem; //1100px
+$pantallaMedia: 56.25rem; //900px
+$pantallaPequena: 37.5rem; //600px
+$pantallaNano: 31.25rem; //500px
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; //1 rem == 10px --- 10px/16px
+
+  @media only screen and (max-width: $pantallaGrande) {
+    font-size: 50%;
+  }
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  background-image: linear-gradient(
+    to right bottom,
+    var(--color-primario-claro),
+    var(--color-primario-oscuro)
+  );
+  background-size: cover;
+  //Evitamos que se repita el fondo
+  background-repeat: no-repeat;
+  color: var(--color-gris-oscuro-2);
+
+  //con el min delante conseguimos que si se hace mas grande se mantenga bien
+  min-height: 100vh; //Esto lo vamos a tener que quitar
+
+}
+::selection{
+  color:red;
+  animation: rgb 1s ;
+  background-color: orange;
+}
+
+@keyframes rgb {
+  0%{
+    background-color: red;
+  }33%{
+    background-color: green;
+  }66%{
+    background-color: blue;
+  }100% {
+    background-color: red;
+  }
+}
